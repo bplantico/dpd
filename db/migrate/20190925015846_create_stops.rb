@@ -1,7 +1,7 @@
 class CreateStops < ActiveRecord::Migration[5.2]
   def change
     create_table :stops do |t|
-      t.string :incident_number
+      t.string :master_incident_number
       t.string :priority_description
       t.string :problem
       t.string :address
@@ -13,6 +13,7 @@ class CreateStops < ActiveRecord::Migration[5.2]
       t.float :geo_lon
       t.float :geo_lat
       t.string :district_id
+      t.string :precinct_id
       t.string :neighborhood_name
 
       t.timestamps

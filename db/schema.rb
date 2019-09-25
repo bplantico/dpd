@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2019_09_25_015846) do
   enable_extension "plpgsql"
 
   create_table "stops", force: :cascade do |t|
-    t.string "incident_number"
+    t.string "master_incident_number"
     t.string "priority_description"
     t.string "problem"
     t.string "address"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2019_09_25_015846) do
     t.float "geo_lon"
     t.float "geo_lat"
     t.string "district_id"
+    t.string "precinct_id"
     t.string "neighborhood_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

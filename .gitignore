@@ -23,3 +23,6 @@
 /config/master.key
 
 coverage
+
+# Ignore any csv files in the tasks folder.
+/lib/tasks/*.csv
